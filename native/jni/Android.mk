@@ -64,6 +64,7 @@ LOCAL_MODULE := libjni_latinime_common_static
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_CLANG := true
+LOCAL_CFLAGS += -fno-sanitize=bounds
 LOCAL_SDK_VERSION := 14
 LOCAL_NDK_STL_VARIANT := c++_static
 
@@ -88,6 +89,7 @@ LOCAL_MODULE := libjni_latinime
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_CLANG := true
+LOCAL_CFLAGS += -fno-sanitize=bounds
 LOCAL_SDK_VERSION := 14
 LOCAL_NDK_STL_VARIANT := c++_static
 LOCAL_LDFLAGS += -ldl
